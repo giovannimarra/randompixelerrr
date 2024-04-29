@@ -26,14 +26,39 @@ canvas[resize]{
 
 #modifiers{
     position: absolute;
-    top: 24px;
+    top: 20px;
     left: 470px;
 }
 
 #brush-size{
     position: absolute;
-    left: 385px;
-    margin-right: 6%;
+    top: 10px;
+    left: 400px;
+
+}
+
+input[type="range"] {
+    display: block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #999;
+	border-radius: 5px;
+    width: 100px;
+    height: 1px;
+    outline: 0;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #f2f2f2;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+  
+input[type="range"]::-webkit-slider-thumb:active {
+    transform: scale(1);
 }
 
 .choosecolor{
